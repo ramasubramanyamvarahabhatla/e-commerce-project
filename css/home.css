@@ -1,0 +1,180 @@
+/* 🏠 Home Page Specific Styles */
+
+/* 🎥 Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Video Background with Expand Animation */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(95%) contrast(98%);
+    
+    /* Animation for expanding effect */
+    animation: expandVideo 1.5s ease-out forwards;
+}
+
+@keyframes expandVideo {
+    0% {
+        width: 40%;
+        height: 40%;
+        opacity: 0.5;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+/* Soft Shadow Below Video */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    background: #ff5733;
+}
+
+/* 🆕 New Arrivals Section */
+.new-arrivals {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 0;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    min-height: 360px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image Zoom on Hover - Without Moving Text */
+.product-card img {
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover h3 {
+    transform: translateY(0px);
+}
+
+/* Price Styling */
+.product-card p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Discount Styling */
+.discount {
+    text-decoration: line-through;
+    color: red;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* View All Button */
+.view-all {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.view-all:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+

@@ -1,0 +1,134 @@
+/* 📌 Categories Section */
+.categories {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.categories h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* 📌 Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ensures better responsiveness */
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* 📌 Category Cards */
+.category-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* 📌 Hover Effects */
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 📌 Category Images (Uniform Size) */
+.category-card img {
+    width: 100%;
+    height: 260px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images fill properly */
+    border-radius: 10px;
+}
+
+/* 📌 Category Titles */
+.category-card h3 {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+/* 📌 Force the entire header to center */
+.category-header {
+    width: 100%;
+    text-align: center; /* Ensures inline elements are centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background: white;
+}
+
+/* 📌 Force H2 to center properly */
+.category-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    width: 100%; /* Make sure it spans full width */
+    text-align: center; /* Center text */
+}
+
+
+
+
+/* 📌 Sorting Dropdown Styling */
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center; /* Centers sorting dropdown */
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* 📌 Sorting Label */
+.filters label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* 📌 Sorting Container */
+.sort-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* 📌 Sorting Dropdown */
+#sort {
+    appearance: none; /* Removes default arrow */
+    background: white;
+    border: 2px solid black;
+    padding: 10px 35px 10px 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    color: black;
+}
+
+/* 📌 Sorting Dropdown Hover Effects */
+#sort:hover,
+#sort:focus {
+    border-color: #ff5733;
+    background: #f8f8f8;
+}
+
+/* 📌 Custom Dropdown Arrow */
+.sort-container::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: black;
+    pointer-events: none;
+}

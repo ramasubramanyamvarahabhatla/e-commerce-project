@@ -1,0 +1,104 @@
+.confirmation-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+    position: relative;
+    min-height: 70vh;
+}
+
+.checkmark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #28a745;
+    position: relative;
+    animation: pop 0.5s ease-out forwards;
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 32px;
+    border-right: 4px solid #28a745;
+    border-bottom: 4px solid #28a745;
+    top: 22px;
+    left: 26px;
+    transform: rotate(45deg) scale(0);
+    transform-origin: bottom left;
+    animation: tick 0.4s ease-out 0.5s forwards;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.home-btn {
+    padding: 10px 25px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #218838;
+}
+
+/* Checkmark Animations */
+@keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes tick {
+    0% { transform: rotate(45deg) scale(0); }
+    100% { transform: rotate(45deg) scale(1); }
+}
+
+/* Confetti burst */
+.confetti::before,
+.confetti::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background:
+        radial-gradient(circle, #ff4d4d 5px, transparent 6px),
+        radial-gradient(circle, #ffcc00 5px, transparent 6px),
+        radial-gradient(circle, #28a745 5px, transparent 6px),
+        radial-gradient(circle, #007bff 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: confetti-burst 1s ease forwards;
+}
+
+@keyframes confetti-burst {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 0; }
+}
