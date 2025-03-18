@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.Co - T-Shirts</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/category-pages.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">SHOP.CO</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="sale.html">On Sale</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search for products..." autocomplete="off">
+                    <div class="search-suggestions" id="suggestions"></div>
+                </div>
+                <a href="cart.html">🛒</a>
+                <a href="profile.html">👤</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Header with Sorting -->
+    <section class="category-header">
+        <h2>T-Shirts</h2>
+        <div class="sort-container">
+            <label for="sortSelect">Sort By:</label>
+            <select id="sortSelect">
+                <option value="popular">Most Popular</option>
+                <option value="lowToHigh">Price: Low to High</option>
+                <option value="highToLow">Price: High to Low</option>
+            </select>
+        </div>
+    </section>
+    
+    <!-- Product Grid (12 T-Shirts) -->
+    <section class="product-grid">
+        <div class="product-card" data-price="35" data-popularity="95">
+            <img src="images/t shirt/t shirt-1.jpg" alt="T-Shirt 1">
+            <h3>Classic Black T-Shirt</h3>
+            <p class="price">$35</p>
+        </div>
+        <div class="product-card" data-price="28" data-popularity="80">
+            <img src="images/t shirt/t shirt-2.jpg" alt="T-Shirt 2">
+            <h3>White Cotton T-Shirt</h3>
+            <p class="price">$28</p>
+        </div>
+        <div class="product-card" data-price="42" data-popularity="98">
+            <img src="images/t shirt/t shirt-3.jpg" alt="T-Shirt 3">
+            <h3>Graphic Printed T-Shirt</h3>
+            <p class="price">$42</p>
+        </div>
+        <div class="product-card" data-price="30" data-popularity="90">
+            <img src="images/t shirt/t shirt-4.jpg" alt="T-Shirt 4">
+            <h3>Striped T-Shirt</h3>
+            <p class="price">$30</p>
+        </div>
+        <div class="product-card" data-price="38" data-popularity="85">
+            <img src="images/t shirt/t shirt 5.jpg" alt="T-Shirt 5">
+            <h3>Vintage Washed Tee</h3>
+            <p class="price">$38</p>
+        </div>
+        <div class="product-card" data-price="40" data-popularity="88">
+            <img src="images/t shirt/t shirt-6.avif" alt="T-Shirt 6">
+            <h3>Red Oversized T-Shirt</h3>
+            <p class="price">$40</p>
+        </div>
+        <div class="product-card" data-price="32" data-popularity="75">
+            <img src="images/t shirt/t shirt-7.webp" alt="T-Shirt 7">
+            <h3>Minimalist Grey Tee</h3>
+            <p class="price">$32</p>
+        </div>
+        <div class="product-card" data-price="36" data-popularity="87">
+            <img src="images/t shirt/t shirt-8.avif" alt="T-Shirt 8">
+            <h3>Classic Navy Blue Tee</h3>
+            <p class="price">$36</p>
+        </div>
+        <div class="product-card" data-price="45" data-popularity="99">
+            <img src="images/t shirt/t shirt-9.jpeg" alt="T-Shirt 9">
+            <h3>Sports Fit T-Shirt</h3>
+            <p class="price">$45</p>
+        </div>
+        <div class="product-card" data-price="29" data-popularity="72">
+            <img src="images/t shirt/t shirt-10.jpeg" alt="T-Shirt 10">
+            <h3>Casual Everyday Tee</h3>
+            <p class="price">$29</p>
+        </div>
+        <div class="product-card" data-price="50" data-popularity="100">
+            <img src="images/t shirt/t shirt-11.webp" alt="T-Shirt 11">
+            <h3>Urban Street Tee</h3>
+            <p class="price">$50</p>
+        </div>
+        <div class="product-card" data-price="27" data-popularity="70">
+            <img src="images/t shirt/t shirt-12.jpg" alt="T-Shirt 12">
+            <h3>Summer Cotton T-Shirt</h3>
+            <p class="price">$27</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Stay up to date with our latest offers.</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+        <p>© 2025 Shop.Co. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/t shirts.js"></script>
+    <script src="js/search.js"></script>
+
+</body>
+</html>

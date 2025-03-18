@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.Co - Categories</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">SHOP.CO</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="on-sale.html">On Sale</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search for products..." autocomplete="off">
+                    <div class="search-suggestions" id="suggestions"></div>
+                </div>
+                <a href="cart.html">🛒</a>
+                <a href="profile.html">👤</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <a href="tshirts.html" class="category-card">
+                <img src="images/t shirt image.webp" alt="T-Shirts">
+                <h3>T-Shirts</h3>
+            </a>
+            <a href="jeans.html" class="category-card">
+                <img src="images/skinny fit jeans.webp" alt="Jeans">
+                <h3>Jeans</h3>
+            </a>
+            <a href="shoes.html" class="category-card">
+                <img src="images/shoes.jpg" alt="Shoes">
+                <h3>Shoes</h3>
+            </a>
+            <a href="jackets.html" class="category-card">
+                <img src="images/jackets.webp" alt="Jackets">
+                <h3>Jackets</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Stay up to date with our latest offers.</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+        <p>© 2025 Shop.Co. All rights reserved.</p>
+    </footer>
+    <script src="js/search.js"></script>
+</body>
+</html>

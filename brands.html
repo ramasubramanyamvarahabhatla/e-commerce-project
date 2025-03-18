@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.Co - Brands</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/brands.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">SHOP.CO</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="sale.html">On Sale</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="brands.html" class="active">Brands</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search for products..." autocomplete="off">
+                    <div class="search-suggestions" id="suggestions"></div>
+                </div>
+                <a href="cart.html">🛒</a>
+                <a href="profile.html">👤</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Showcase -->
+    <section class="brands-section">
+        <h2>Featured Brands</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <!-- First loop -->
+                <div class="brand-card"><img src="images/brands/nike.jpg" alt="Nike"></div>
+                <div class="brand-card"><img src="images/brands/Adidas.webp" alt="Adidas"></div>
+                <div class="brand-card"><img src="images/brands/zara.png" alt="Zara"></div>
+                <div class="brand-card"><img src="images/brands/uniqlo.png" alt="Uniqlo"></div>
+                <div class="brand-card"><img src="images/brands/under-armor.png" alt="Under Armour"></div>
+                <div class="brand-card"><img src="images/brands/puma.webp" alt="Puma"></div>
+
+                <!-- Duplicate loop for seamless scroll -->
+                <div class="brand-card"><img src="images/brands/nike.jpg" alt="Nike"></div>
+                <div class="brand-card"><img src="images/brands/Adidas.webp" alt="Adidas"></div>
+                <div class="brand-card"><img src="images/brands/zara.png" alt="Zara"></div>
+                <div class="brand-card"><img src="images/brands/uniqlo.png" alt="Uniqlo"></div>
+                <div class="brand-card"><img src="images/brands/under-armor.png" alt="Under Armour"></div>
+                <div class="brand-card"><img src="images/brands/puma.webp" alt="Puma"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Stay up to date with our latest offers.</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+        <p>© 2025 Shop.Co. All rights reserved.</p>
+    </footer>
+
+    <script src="js/brands.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

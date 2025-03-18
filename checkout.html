@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.Co - Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+    <div class="checkout-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Shop.Co</h2>
+            <p>Secure and simple payment processing.</p>
+            <ul class="summary-list">
+                <li>✔ SSL Secured Checkout</li>
+                <li>✔ Trusted by 10,000+ users</li>
+                <li>✔ Instant Order Confirmation</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="checkout-content">
+            <h3>Checkout</h3>
+
+            <!-- Express Pay -->
+            <div class="express-pay">
+                <button class="apple-pay-btn" id="applePayBtn">
+                    <img src="images/apple logo.png" alt="Apple Pay">
+                </button>
+                <button class="google-pay-btn" id="googlePayBtn">
+                    <img src="images/google-pay logo.png" alt="Google Pay">
+                </button>
+            </div>
+
+            <div class="divider">OR</div>
+
+            <!-- Normal Card Form -->
+            <form class="payment-form" id="cardForm">
+                <input type="text" placeholder="Cardholder Name" required>
+                <input type="text" placeholder="Card Number" required>
+                <div class="row">
+                    <input type="text" placeholder="MM/YY" required>
+                    <input type="text" placeholder="CVV" required>
+                </div>
+                <input type="text" placeholder="Billing Address" required>
+                <button type="submit" id="payNowBtn">Pay Now</button>
+            </form>
+
+            <!-- Dummy Invoice Section -->
+            <section class="invoice-history">
+                <h4>Invoice History</h4>
+                <div class="invoice">
+                    <div>
+                        <strong>9 Mar 2025</strong>
+                        <p>$120.00</p>
+                    </div>
+                    <span class="paid">Paid</span>
+                </div>
+                <div class="invoice">
+                    <div>
+                        <strong>8 Feb 2025</strong>
+                        <p>$85.00</p>
+                    </div>
+                    <span class="paid">Paid</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Apple Pay Modal -->
+    <div class="modal" id="appleModal">
+        <div class="modal-dialog">
+            <h4>Apple Pay</h4>
+            <input type="email" placeholder="Apple ID" required>
+            <input type="text" placeholder="Card Number" required>
+            <button id="appleConfirm">Confirm Payment</button>
+        </div>
+    </div>
+
+    <!-- Google Pay Modal -->
+    <div class="modal" id="googleModal">
+        <div class="modal-dialog">
+            <h4>Google Pay</h4>
+            <input type="email" placeholder="Google Account Email" required>
+            <input type="text" placeholder="Card Number" required>
+            <button id="googleConfirm">Confirm Payment</button>
+        </div>
+    </div>
+
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>
